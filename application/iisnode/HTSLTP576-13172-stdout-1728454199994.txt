@@ -1,1 +1,0 @@
-Server running at \\.\pipe\a113f162-829c-4bcc-b18d-6b73f9949d75
