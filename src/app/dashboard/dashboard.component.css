@@ -1,0 +1,119 @@
+.card {
+    margin: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 3px solid #bbbbbb6b;
+    cursor: pointer;
+    /* background: rgba(28, 68, 40, .502) 0 0 no-repeat padding-box; */
+  }
+  
+  .card-img-top {
+    /* width: 160px; */
+    /* padding-top: 40px; */
+    /* height: auto; */
+    position: relative;
+  
+  
+    width: 170px;
+    height: 230px;
+    padding: 40px 0px;
+  }
+  .bg-color{
+    background: #f7f7f7;
+    min-height: 80vh;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+      bottom: 0;
+      left: 76px;
+      width: 51%;
+      height: 80%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+      /* background: radial-gradient(circle 30vh at 50% 125%, #000000, #ffffff00); */
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      border-radius: 100px;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(28, 68, 40, .8); */
+  }
+  
+  .whiteBtn{
+    background-color: white;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000c4;
+  }
+
+  /* header */
+  .head{
+    padding: 10px 30px;
+    background: #7ac050;
+   }
+   .headbox{
+    padding: 15px;
+    border: 3px solid #bbbbbb6b;
+    display: flex;
+   }
+   .logo{
+    padding: 0px;
+    max-width: 200px;
+    background-color: #bbbbbb6b;
+   }
+
+   .logo-img{
+    height: 60px;
+    width: 200px;
+   }
+  /* header end */
+
+   /* footer */
+   .footer-text{
+    text-align: center;
+    line-height: normal;
+    font-weight: 700;
+    padding: 6px;
+    border: 3px solid #bbbbbb6b;
+    background: #ffffff8a;
+    color: #CCCCCC;
+    max-width: 35%;
+}
+/* footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  } */
+
+  .foot{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: center;
+    background: #E6E6E6;
+   }
+/* footer end */
+
+  @media (min-width: 750px) and (max-width: 900px) {
+    .col-md-3 {
+      flex: unset;
+      max-width: 100% !important;
+    }
+  }
+  

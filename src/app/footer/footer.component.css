@@ -1,0 +1,34 @@
+
+  /* footer */
+  .footer-text{
+    text-align: center;
+    line-height: normal;
+    font-weight: 700;
+    padding: 6px;
+    border: 3px solid #bbbbbb6b;
+    background: #ffffff8a;
+    color: #CCCCCC;
+}
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 35%;
+}
+/* footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  } */
+
+  .foot{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: center;
+    background: #E6E6E6;
+   }
+/* footer end */

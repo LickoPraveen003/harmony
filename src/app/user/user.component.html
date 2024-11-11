@@ -1,0 +1,139 @@
+<!-- Header Start -->
+<div class="row m-0 head">
+  <div class="col-12 headbox">
+    <div class="col-2 logo">
+      <!-- <img class="logo-img" [src]="logoUrl" alt="Logo"> -->
+      <img class="logo-img" src="../../assets/images/New Logo 2.jpg" alt="Logo">
+    </div>
+    <div class="col-10 text-right">
+      <button class="btn whiteBtn mt-3" (click)="goBack()">Back</button>
+    </div>
+  </div>
+</div>
+<!-- Header End -->
+
+<!-- body -->
+<div class="w-100 p-5">
+  <div class="row h-100">
+    <!-- Left side: Add User Form -->
+    <div class="col-md-4 d-flex align-items-center">
+      <form class="container p-4 border rounded" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <h1 class="text-center mb-4">User Details</h1>
+        <div *ngIf="errMsg.length > 0" class="alert alert-danger">
+          <span *ngFor="let msg of errMsg">{{ msg }}</span>
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" class="form-control" placeholder="Username" formControlName="username">
+          <div *ngIf="userForm.get('username')!.invalid && userForm.get('username')!.touched">
+            <small class="text-danger" *ngIf="userForm.get('username')!.errors?.['required']">Username is required.</small>
+            <small class="text-danger" *ngIf="userForm.get('username')!.errors?.['minlength']">Username must be at least 4 characters long.</small>
+          </div>
+        </div>
+        <div class="form-group position-relative">
+          <label for="password">Password</label>
+          <input [type]="passwordFieldType" id="password" class="form-control" placeholder="Password" formControlName="password">
+          <i class="fa eyeIcon" [ngClass]="passwordFieldType === 'password' ? 'fa-eye' : 'fa-eye-slash'" (click)="togglePasswordVisibility()"></i>
+          <div *ngIf="userForm.get('password')!.invalid && userForm.get('password')!.touched">
+            <small class="text-danger" *ngIf="userForm.get('password')!.errors?.['required']">Password is required.</small>
+            <small class="text-danger" *ngIf="userForm.get('password')!.errors?.['minlength']">Password must be at least 6 characters long.</small>
+            <small class="text-danger" *ngIf="userForm.get('password')!.errors?.['passwordStrength']">{{ userForm.get('password')!.errors?.['passwordStrength'] }}</small>
+          </div>
+        </div>
+        <div class="form-group position-relative">
+          <label for="confirmPassword">Confirm Password</label>
+          <input [type]="passwordFieldType" id="confirmPassword" class="form-control" placeholder="Confirm Password" formControlName="confirmPassword">
+          <i class="fa eyeIcon" [ngClass]="passwordFieldType === 'password' ? 'fa-eye' : 'fa-eye-slash'" (click)="togglePasswordVisibility()"></i>
+          <div *ngIf="userForm.get('confirmPassword')!.invalid && userForm.get('confirmPassword')!.touched">
+            <small class="text-danger" *ngIf="userForm.get('confirmPassword')!.errors?.['required']">Confirm Password is required.</small>
+            <small class="text-danger" *ngIf="userForm.errors?.['mismatch']">Passwords must match.</small>
+          </div>
+        </div>
+        <div class="form-group d-flex align-items-center">
+          <label for="auditToggle" class="mr-2">Audit</label>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="auditToggle" formControlName="audit">
+            <label class="custom-control-label" for="auditToggle"></label>
+          </div>
+        </div>
+        <div class="form-group" *ngIf="userForm.get('audit')!.value">
+          <label for="auditURL">Audit URL</label>
+          <textarea id="auditURL" class="form-control" placeholder="Enter audit URL" formControlName="auditURL"></textarea>
+        </div>
+        <div class="form-group d-flex align-items-center">
+          <label for="itDashboardToggle" class="mr-2">IT Dashboard</label>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="itDashboardToggle" formControlName="itDashboard">
+            <label class="custom-control-label" for="itDashboardToggle"></label>
+          </div>
+        </div>
+        <div class="form-group" *ngIf="userForm.get('itDashboard')!.value">
+          <label for="itDashboardURL">IT Dashboard URL</label>
+          <textarea id="itDashboardURL" class="form-control" placeholder="Enter IT Dashboard URL" formControlName="itDashboardURL"></textarea>
+        </div>
+        <div class="form-group d-flex align-items-center">
+          <label for="cardinal3PLToggle" class="mr-2">Cardinal 3PL</label>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="cardinal3PLToggle" formControlName="cardinal3PL">
+            <label class="custom-control-label" for="cardinal3PLToggle"></label>
+          </div>
+        </div>
+        <div class="form-group" *ngIf="userForm.get('cardinal3PL')!.value">
+          <label for="cardinal3PLURL">Cardinal 3PL URL</label>
+          <textarea id="cardinal3PLURL" class="form-control" placeholder="Enter Cardinal 3PL URL" formControlName="cardinal3PLURL"></textarea>
+        </div>
+        <div class="form-group d-flex align-items-center">
+          <label for="ics3PLToggle" class="mr-2">ICS 3PL</label>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="ics3PLToggle" formControlName="ics3PL">
+            <label class="custom-control-label" for="ics3PLToggle"></label>
+          </div>
+        </div>
+        <div class="form-group" *ngIf="userForm.get('ics3PL')!.value">
+          <label for="ics3PLURL">ICS 3PL URL</label>
+          <textarea id="ics3PLURL" class="form-control" placeholder="Enter ICS 3PL URL" formControlName="ics3PLURL"></textarea>
+        </div>
+        <button type="submit" class="btn btnColor btn-block" [disabled]="userForm.invalid">Add User</button>
+      </form>
+    </div>
+    
+
+    <!-- Right side: User List Table -->
+    <div class="col-md-8 d-flex align-items-center">
+      <div class="container">
+        <h2>User List</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Menu</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users; let i = index">
+              <td>{{ user.username }}</td>
+              <td>{{ user.password }}</td>
+              <td>{{ getMenuNames(user) }}</td>
+              <td>
+                <!-- <button class="btn btnColor btn-sm mr-3" (click)="editUser(i)">Edit</button> -->
+                <button class="btn btnColor btn-sm" (click)="deleteUser(i)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- body end -->
+
+  <!-- Footer Start -->
+  <footer class="row m-0 foot">
+    <div class="col-12 footer-text">
+        <p class="m-0">&copy; 2024 Harmony Biosciences. All Rights Deserved.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->

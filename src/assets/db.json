@@ -1,0 +1,288 @@
+{
+  "users": [
+    {
+      "id": "5461",
+      "username": "suriya",
+      "password": "Suriya@123",
+      "menu": [
+        {
+          "menuId": "1",
+          "menuName": "Audit",
+          "isactive": true,
+          "menuURL": "https://app.powerbi.com/reportEmbed?reportId=80445924-1ee3-4161-a0e8-7056c9c8892a&autoAuth=true&ctid=66da551f-9fee-4de1-aa5f-038e0b3d62b4"
+        },
+        {
+          "menuId": "2",
+          "menuName": "IT Dashboard",
+          "isactive": true,
+          "menuURL": "https://app.powerbi.com/reportEmbed?reportId=80445924-1ee3-4161-a0e8-7056c9c8892a&autoAuth=true&ctid=66da551f-9fee-4de1-aa5f-038e0b3d62b4"
+        },
+        {
+          "menuId": "3",
+          "menuName": "Cardinal 3PL",
+          "isactive": true,
+          "menuURL": "https://app.powerbi.com/reportEmbed?reportId=80445924-1ee3-4161-a0e8-7056c9c8892a&autoAuth=true&ctid=66da551f-9fee-4de1-aa5f-038e0b3d62b4"
+        },
+        {
+          "menuId": "4",
+          "menuName": "ICS 3PL",
+          "isactive": true,
+          "menuURL": "https://app.powerbi.com/reportEmbed?reportId=80445924-1ee3-4161-a0e8-7056c9c8892a&autoAuth=true&ctid=66da551f-9fee-4de1-aa5f-038e0b3d62b4"
+        }
+      ]
+    },
+    {
+      "id": "4176",
+      "username": "Licko",
+      "password": "Licko@123",
+      "menu": [
+        {
+          "menuId": "2",
+          "menuName": "IT Dashboard",
+          "isactive": true,
+          "menuURL": "https://app.powerbi.com/reportEmbed?reportId=80445924-1ee3-4161-a0e8-7056c9c8892a&autoAuth=true&ctid=66da551f-9fee-4de1-aa5f-038e0b3d62b4"
+        },
+        {
+          "menuId": "4",
+          "menuName": "ICS 3PL",
+          "isactive": true,
+          "menuURL": "https://app.powerbi.com/reportEmbed?reportId=80445924-1ee3-4161-a0e8-7056c9c8892a&autoAuth=true&ctid=66da551f-9fee-4de1-aa5f-038e0b3d62b4"
+        }
+      ]
+    }
+  ],
+  "menus": [
+    {
+      "menuImage": "../../assets/images/Audit_image.png",
+      "menuName": "Audit",
+      "menuId": "1",
+      "id": "9be5"
+    },
+    {
+      "menuImage": "../../assets/images/IT_dashboard.png",
+      "menuName": "IT Dashboard",
+      "menuId": "2",
+      "id": "9822"
+    },
+    {
+      "menuImage": "../../assets/images/cardinal_image.png",
+      "menuName": "Cardinal 3PL",
+      "menuId": "3",
+      "id": "d391"
+    },
+    {
+      "menuImage": "../../assets/images/ics_3pl_image.png",
+      "menuName": "ICS 3PL",
+      "menuId": "4",
+      "id": "e3df"
+    }
+  ],
+  "submenus": [
+    {
+      "submenuImage": "../../assets/images/tech.png",
+      "submenuName": "Coupa Changes",
+      "submenuId": "1",
+      "menuId": "1",
+      "id": "05e8"
+    },
+    {
+      "submenuImage": "../../assets/images/tech.png",
+      "submenuName": "Netsuite Admin Changes",
+      "submenuId": "2",
+      "menuId": "1",
+      "id": "6e5c"
+    },
+    {
+      "submenuImage": "../../assets/images/tech.png",
+      "submenuName": "Netsuite Role Changes",
+      "submenuId": "3",
+      "menuId": "1",
+      "id": "5ed8"
+    },
+    {
+      "submenuImage": "../../assets/images/tech.png",
+      "submenuName": "Netsuite Employee Role Changes",
+      "submenuId": "4",
+      "menuId": "1",
+      "id": "29a3"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Contract",
+      "submenuId": "5",
+      "menuId": "2",
+      "id": "26f0"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Purchase Orders",
+      "submenuId": "6",
+      "menuId": "2",
+      "id": "f421"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Invoice Details",
+      "submenuId": "7",
+      "menuId": "2",
+      "id": "2abe"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Po Not Invoiced",
+      "submenuId": "8",
+      "menuId": "2",
+      "id": "d7b8"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Concur Expenses",
+      "submenuId": "9",
+      "menuId": "2",
+      "id": "2185"
+    },
+    {
+      "submenuImage": "../../assets/images/finance.png",
+      "submenuName": "All Invoices Report",
+      "submenuId": "10",
+      "menuId": "4",
+      "id": "3b2d"
+    },
+    {
+      "submenuImage": "../../assets/images/finance.png",
+      "submenuName": "Invoices With PO",
+      "submenuId": "11",
+      "menuId": "4",
+      "id": "6941"
+    },
+    {
+      "submenuImage": "../../assets/images/finance.png",
+      "submenuName": "Invoices Without PO",
+      "submenuId": "12",
+      "menuId": "4",
+      "id": "c41f"
+    },
+    {
+      "submenuImage": "../../assets/images/finance.png",
+      "submenuName": "All PO's Report",
+      "submenuId": "13",
+      "menuId": "4",
+      "id": "12e0"
+    },
+    {
+      "submenuImage": "../../assets/images/finance.png",
+      "submenuName": "PO Not Invoices",
+      "submenuId": "14",
+      "menuId": "4",
+      "id": "5873"
+    },
+    {
+      "submenuImage": "../../assets/images/finance.png",
+      "submenuName": "Overpaid Invoices",
+      "submenuId": "15",
+      "menuId": "4",
+      "id": "4467"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Gross Sales - Daily Orders",
+      "submenuId": "16",
+      "menuId": "3",
+      "id": "2dcf"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Gross Sales - Net Sales",
+      "submenuId": "17",
+      "menuId": "3",
+      "id": "e2b9"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Lot Movement Details",
+      "submenuId": "18",
+      "menuId": "3",
+      "id": "2388"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Inventory Snapshot",
+      "submenuId": "19",
+      "menuId": "3",
+      "id": "4a70"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Inventory Transaction Report",
+      "submenuId": "20",
+      "menuId": "3",
+      "id": "87b4"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Shipment Report",
+      "submenuId": "21",
+      "menuId": "3",
+      "id": "9783"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Returns",
+      "submenuId": "22",
+      "menuId": "3",
+      "id": "2b88"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Customer Master Report",
+      "submenuId": "23",
+      "menuId": "3",
+      "id": "065a"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Cash Receipt Report",
+      "submenuId": "24",
+      "menuId": "3",
+      "id": "4b4a"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Chargeback Report",
+      "submenuId": "25",
+      "menuId": "3",
+      "id": "d007"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Invoice Report",
+      "submenuId": "26",
+      "menuId": "3",
+      "id": "b9be"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "Daily Order/Shipment Report",
+      "submenuId": "27",
+      "menuId": "3",
+      "id": "e3c6"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "HARP Dispense Report",
+      "submenuId": "28",
+      "menuId": "3",
+      "id": "9201"
+    },
+    {
+      "submenuImage": "../../assets/images/IT.png",
+      "submenuName": "HARP Inventory Report",
+      "submenuId": "29",
+      "menuId": "3",
+      "id": "9d98"
+    }
+  ],
+  "logo":{
+    "imgUrl":"../../assets/images/New Logo 2.jpg"
+  }
+}
